@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Thyme Bandits | My Recipes</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" /> 
+        <link href="index.css" rel="stylesheet" type="text/css" />
+    </head>
+	<body>
+		<div id="container">
+		<header>
+			<h1>Thyme Bandits - Saving you time in the kitchen</h1>
+			<img src="https://i.imgur.com/lio8hgB.png" alt="A group of quirky, adventurous characters resembling the cast of the movie Time Bandits, set in a lively working kitchen. The kitchen is filled with glowing pots, pans, and utensils as if magic is at play, and fresh thyme herb is prominently featured throughout - hanging from racks, growing in pots, and scattered on counters. The art style is detailed and slightly fantastical, evoking a mix of culinary and time-travel adventure vibes."/>
+			<p>As an enthusiastic and curious home cook, it can be hard to keep track of the many different recipes and resources I come across. I often make the same recipes, but with a pretty poor memory I also end up repeatedly googling them to check I'm following correctly. Thyme Bandits is an attempt to consolidate all my favourite recipes in a single spot, whilst trying out some new skills in JavaScript, HTML, and eventually Selenium and Java.</p>
+		</header>
+			
+		<section onmouseover="headerHover()" onmouseout="headerNormal()">
+			<h2>The Regulars <i id="ingredients" class="fa fa-coffee" aria-hidden="true"></i></h2>
+			<ul>
+				<li>Best Ever Macaroni Cheese</li>
+				<li>Lasagne</li>
+				<li>Red Thai Prawn Curry</li>
+				<li>Beef Ragout</li>
+				<li>Easy Philly Cheesesteak</li>
+				<li>Best Cinnamon Rolls</li>
+				<li>Chorizo Risotto</li>
+				<li>Vegetable Paella Recipe</li>
+				<li>Epic Summer Salad</li>
+				<li>Vietnamese Shaking Beef</li>
+				<li>Chicken Noodle Stir Fry</li>
+				<li><a href="index.html">Top Tier Tea</li></a>
+			</ul>
+		</section>
+			
+		<section onmouseover="headerHover()" onmouseout="headerNormal()">
+			<h2>New Experiments <i id="preparation" class="fa fa-check-circle" aria-hidden="true"></i></h2>
+			<ul>
+				<li>Rice Kheer (Indian Rice Pudding)</li>
+				<li>Sweet Potato Casserole</li>
+				<li>Somali Corn in Coconut Turmeric Sauce</li>
+				<li>Stir-Fried Chicken with Ketchup</li>
+				<li>Homemade Rosemary Crackers</li>
+				<li>Vegan Chocolate Cake</li>
+			</ul>
+		</section>
+			
+		<footer>
+			<p>Copyright Me 2025</p>
+		</footer>
+		</div>
+		<script>
+        function headerHover() {document.getElementById("ingredients").style.fontSize = "300%";}
+		function headerNormal() {document.getElementById("ingredients").style.fontSize = "100%";}
+        </script>
+	</body>
+</html>

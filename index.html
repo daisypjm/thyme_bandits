@@ -3,51 +3,55 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
-        <title>Tea Recipe</title>
-        <!-- add the font awesome link here -->
+        <title>Thyme Bandits | My Recipes</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" /> 
         <link href="index.css" rel="stylesheet" type="text/css" />
     </head>
 	<body>
 		<div id="container">
 		<header>
-			<h1>How to make Tea</h1>
-			<img src="https://codeinstitute.s3-eu-west-1.amazonaws.com/5DCC/images/Content/oSVKMED.jpg" alt="A man drinking tea">
-			<p>At the very least, tea is a flavourful way of getting enough fluid into your body each day. On top of that, studies have shown teas can help protect your teeth and your heart</p>
+			<h1>Thyme Bandits - Saving you time in the kitchen</h1>
+			<img src="https://i.imgur.com/lio8hgB.png" alt="A group of quirky, adventurous characters resembling the cast of the movie Time Bandits, set in a lively working kitchen. The kitchen is filled with glowing pots, pans, and utensils as if magic is at play, and fresh thyme herb is prominently featured throughout - hanging from racks, growing in pots, and scattered on counters. The art style is detailed and slightly fantastical, evoking a mix of culinary and time-travel adventure vibes."/>
+			<p>As an enthusiastic and curious home cook, it can be hard to keep track of the many different recipes and resources I come across. I often make the same recipes, but with a pretty poor memory I also end up repeatedly googling them to check I'm following correctly. Thyme Bandits is an attempt to consolidate all my favourite recipes in a single spot, whilst trying out some new skills in JavaScript, HTML, and eventually Selenium and Java.</p>
 		</header>
 			
-		<section onmouseover="ingredientsHover()" onmouseout="ingredientsNormal()">
-			<h2>ingredients <i id="ingredients" class="fa fa-coffee" aria-hidden="true"></i></h2>
+		<section onmouseover="headerHover()" onmouseout="headerNormal()">
+			<h2>The Regulars <i id="ingredients" class="fa fa-coffee" aria-hidden="true"></i></h2>
 			<ul>
-				<li>Tea Bag</li>
-				<li>Water</li>
-				<li>Milk - Dairy/Plant based(Optional)</li>
-				<li>Sugar/Honey (Optional)</li>
+				<li>Best Ever Macaroni Cheese</li>
+				<li>Lasagne</li>
+				<li>Red Thai Prawn Curry</li>
+				<li>Beef Ragout</li>
+				<li>Easy Philly Cheesesteak</li>
+				<li>Best Cinnamon Rolls</li>
+				<li>Chorizo Risotto</li>
+				<li>Vegetable Paella Recipe</li>
+				<li>Epic Summer Salad</li>
+				<li>Vietnamese Shaking Beef</li>
+				<li>Chicken Noodle Stir Fry</li>
+				<li><a href="index.html">Top Tier Tea</li></a>
 			</ul>
 		</section>
 			
-		<section onmouseover="preparationHover()" onmouseout="preparationNormal()">
-			<h2>preparation <i id="preparation" class="fa fa-check-circle" aria-hidden="true"></i></h2>
-			<ol>
-				<li>Run the tap a little so the water's nicely aerated, and only boil it once to keep the oxygen level up. Oxygen in water helps flavour!</li>
-				<li>Pop a tea bag into your mug (<em>always</em> a big mug)</li>
-				<li>Pour the hot water over the tea bag and stir briefly.</li>
-                <li>Tea needs time to unlock all its flavour, so give it 3-4 minutes to do its thing. This is a perfect time to grab a sneaky cookie or daydream about vacations.</li>
-				<li>Before removing the tea bag, gently squish it with a spoon against the side of the mug. Not too much or you'll make it bitter.</li>
-				<li>If you want, throw in some milk or sugar or honey or nothing else at all.</li>
-				<li>Enjoy!</li>
-			</ol>
+		<section onmouseover="headerHover()" onmouseout="headerNormal()">
+			<h2>New Experiments <i id="preparation" class="fa fa-check-circle" aria-hidden="true"></i></h2>
+			<ul>
+				<li>Rice Kheer (Indian Rice Pudding)</li>
+				<li>Sweet Potato Casserole</li>
+				<li>Somali Corn in Coconut Turmeric Sauce</li>
+				<li>Stir-Fried Chicken with Ketchup</li>
+				<li>Homemade Rosemary Crackers</li>
+				<li>Vegan Chocolate Cake</li>
+			</ul>
 		</section>
 			
 		<footer>
-			<p>Copyright Me 2020</p>
+			<p>Copyright Me 2025</p>
 		</footer>
 		</div>
 		<script>
-        function ingredientsHover() {document.getElementById("ingredients").style.fontSize = "300%";}
-		function ingredientsNormal() {document.getElementById("ingredients").style.fontSize = "100%";}
-		function preparationHover() {document.getElementById("preparation").style.fontSize = "300%";}
-		function preparationNormal() {document.getElementById("preparation").style.fontSize = "100%";}
+        function headerHover() {document.getElementById("ingredients").style.fontSize = "300%";}
+		function headerNormal() {document.getElementById("ingredients").style.fontSize = "100%";}
         </script>
 	</body>
 </html>

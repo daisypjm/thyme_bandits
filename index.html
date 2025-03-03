@@ -15,8 +15,8 @@
 			<p>As an enthusiastic and curious home cook, it can be hard to keep track of the many different recipes and resources I come across. I often make the same recipes, but with a pretty poor memory I also end up repeatedly googling them to check I'm following correctly. Thyme Bandits is an attempt to consolidate all my favourite recipes in a single spot, whilst trying out some new skills in JavaScript, HTML, and eventually Selenium and Java.</p>
 		</header>
 			
-		<section onmouseover="headerHover()" onmouseout="headerNormal()">
-			<h2>The Regulars <i id="ingredients" class="fa fa-coffee" aria-hidden="true"></i></h2>
+		<section onmouseover="regularHover()" onmouseout="regularNormal()">
+			<h2>The Regulars <i id="regular" class="fa-regular fa-star" aria-hidden="true"></i></h2>
 			<ul>
 				<li>Best Ever Macaroni Cheese</li>
 				<li>Lasagne</li>
@@ -29,12 +29,13 @@
 				<li>Epic Summer Salad</li>
 				<li>Vietnamese Shaking Beef</li>
 				<li>Chicken Noodle Stir Fry</li>
+				<li>No Knead Bread</li>
 				<li><a href="index.html">Top Tier Tea</li></a>
 			</ul>
 		</section>
 			
-		<section onmouseover="headerHover()" onmouseout="headerNormal()">
-			<h2>New Experiments <i id="preparation" class="fa fa-check-circle" aria-hidden="true"></i></h2>
+		<section onmouseover="experimentHover()" onmouseout="experimentNormal()">
+			<h2>New Experiments <i id="experiment" class="fa-regular fa-eye" aria-hidden="true"></i></h2>
 			<ul>
 				<li>Rice Kheer (Indian Rice Pudding)</li>
 				<li>Sweet Potato Casserole</li>
@@ -50,8 +51,10 @@
 		</footer>
 		</div>
 		<script>
-        function headerHover() {document.getElementById("ingredients").style.fontSize = "300%";}
-		function headerNormal() {document.getElementById("ingredients").style.fontSize = "100%";}
+        function regularHover() {document.getElementById("regular").style.fontSize = "300%";}
+		function regularNormal() {document.getElementById("regular").style.fontSize = "100%";}
+		function experimentHover() {document.getElementById("experiment").style.fontSize = "300%";}
+		function experimentNormal() {document.getElementById("experiment").style.fontSize = "100%";}
         </script>
 	</body>
 </html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Tea Recipe</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" /> 
+        <link href="index.css" rel="stylesheet" type="text/css" />
+    </head>
+	<body>
+		<div id="container">
+		<header>
+			<h1>Easy No-Knead Bread</h1>
+            <img src="https://i.imgur.com/gG8ynSk.jpg" alt="A sliced loaf of bread on a white and grey background, with flour and seeds scattered around"/>
+			<p>Classic easy bread recipe you can throw together in a couple of hours.</p>
+		</header>
+			
+		<section onmouseover="ingredientsHover()" onmouseout="ingredientsNormal()">
+			<h2>ingredients <i id="ingredients" class="fa fa-coffee" aria-hidden="true"></i></h2>
+			<ul>
+				<li>525g strong bread flour</li>
+				<li>7g quick acting yeast</li>
+				<li>15g olive oil</li>
+				<li>450ml warm water</li>
+                <li>12g fine sea salt</li>
+			</ul>
+		</section>
+			
+		<section onmouseover="preparationHover()" onmouseout="preparationNormal()">
+			<h2>preparation <i id="preparation" class="fa fa-check-circle" aria-hidden="true"></i></h2>
+			<ol>
+				<li>Mix together all the ingredients with a spoon until combined into a sticky dough.</li>
+				<li>Cover with cling film and leave in a warm spot for 2-4 hours.</li>
+                <li>Heat the oven to 220c, and place a large casserole dish or dutch oven inside to pre-heat.</li>
+				<li>Once the dough has risen, assemble the following in the pre-heated dutch oven:</li>
+                    <ul>
+                        <li>4-5 ice cubes (these create steam and a lovely crispy outer crust)</li>
+                        <li>A large sheet of baking parchment to contain the dough</li>
+                        <li>The freshly risen dough</li>
+                        <li>A little sprinkle of flour (the dough may be quite wet!)</li>
+                    </ul>
+                <li>Place the lid onto the dutch oven and put in the oven for 30-40 mins.</li>
+                <li>The bread is ready once its golden brown on the outside, and givens a nice hollow sound when tapped.</li>
+				<li>Remove from the baking paper, and place on a wire rack to cool before eating with LOTS OF BUTTER.</li>
+				<li>Enjoy!</li>
+			</ol>
+		</section>
+			
+		<footer>
+			<p>Copyright Me 2025</p>
+		</footer>
+		</div>
+		<script>
+        function ingredientsHover() {document.getElementById("ingredients").style.fontSize = "300%";}
+		function ingredientsNormal() {document.getElementById("ingredients").style.fontSize = "100%";}
+		function preparationHover() {document.getElementById("preparation").style.fontSize = "300%";}
+		function preparationNormal() {document.getElementById("preparation").style.fontSize = "100%";}
+        </script>
+	</body>
+</html>

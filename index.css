@@ -3,6 +3,14 @@ body {
 	color: slategray;
 }
 
+header {
+	background-color: orange;
+	color: white;
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
 h1 {
 	font-size: 300%;	
 }
